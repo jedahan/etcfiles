@@ -8,7 +8,7 @@
 #
 
 # IPv4 and IPv6 localhost aliases
-192.168.25.115	talon	# Added by NetworkManager
+143.48.48.154	talon	# Added by NetworkManager
 127.0.0.1	localhost.localdomain	localhost
 ::1	talon	localhost6.localdomain6	localhost6
 ::1		localhost
