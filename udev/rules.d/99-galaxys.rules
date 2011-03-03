@@ -1,0 +1,1 @@
+KERNEL=="sd[a-e]", SUBSYSTEM=="block", ATTRS{serial}=="1000545e6628", SYMLINK+="galaxys"
