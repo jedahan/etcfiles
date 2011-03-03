@@ -1,0 +1,10 @@
+CHOST="x86_64-pc-linux-gnu"
+CFLAGS="-march=native -O2 -pipe -msse -w"
+CXXFLAGS="${CFLAGS}"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+
+EXTRA_WGET="--progress=bar:force --quiet"
+
+PATH="/usr/lib/ccache/bin/:${PATH}"
+CCACHE_DIR="/var/tmp/ccache"
+SANDBOX_WRITE="${SANDBOX_WRITE}:${CCACHE_DIR}"
