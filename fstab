@@ -1,0 +1,15 @@
+# /etc/fstab: static file system information.
+#
+# The root filesystem should have a pass number of either 0 or 1.
+# All other filesystems should have a pass number of 0 or greater than 1.
+#
+
+# <fs>           <mountpoint>    <type>      <opts>        <dump/pass>
+
+/dev/sda1        /boot           ext4        noatime              1 2
+/dev/sda3        /               ext4        noatime              0 1
+/dev/sda5        /home           ext4        noatime              0 3
+/dev/cdrom       /mnt/cdrom      auto        noauto,ro            0 0
+/dev/galaxys	 /mnt/phone	 auto	     noauto,user,rw	  0 0
+
+shm              /dev/shm        tmpfs       nodev,nosuid,noexec  0 0
